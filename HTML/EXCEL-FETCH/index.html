@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/styles.css" rel="stylesheet" />
-  <title>Home</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+<body><div class="header">
+    <h1>Excel Data Upload</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><input type="text" name="search" id="search" onkeyup="search()" placeholder="search..."/></li>
+        </ul>
+</div>
+    <h1>Excel Data Upload</h1>
+    <div class="upload">
+        <input type="file" placeholder="upload excel file"  id="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+        <button type="button" id="upload" onclick="upload()">Upload</button></div>
+    <div id="home">
+        <h2>Excel Data</h2>
+        <input type="text" name="index" placeholder="row" id="index" />
+        <input type="text" name="name" placeholder="enter your name here..." id="name" />
+        <input type="text" name="phone" placeholder="enter your phone no. here..." id="phone" />
+        <input type="text" name="email" placeholder="enter your email here..." id="email" />
+        <button type="submit" id="btn" onclick="add()">Save</button>
+        <button type="button" id="btn1" onclick="update()">Update</button>
+        <button type="reset" id="btn2" onclick="reset()">Reset</button></div>
 
-<body>
-  <div id="home">
-  <h1>Home</h1>
-  <p>Home page content goes here.</p>
-  <input type="text" placeholder="enter your sr.no. here..." name="srno" id="sr" />
-  <input type="text" name="name" placeholder="enter your name here..." id="name" />
-  <input type="text" name="phone" placeholder="enter your phone no. here..." id="phone" />
-  <input type="text" name="email" placeholder="enter your email here..." id="email" />
-  <button type="submit" id="btn" onclick="addRow()">Save</button>
-  <button type="button" id="btn1" onclick="updateRow()">Update</button>
-  <button type="reset" id="btn2" onclick="reset()">Reset</button></div>
-  <div id="table">
-    <h1>Table</h1>
-    <div id="searching">
-      <input type="text" placeholder="Search..." id="search" class="search" name="search" /><button type="button" id="btn3" onclick="search()">Search</button>
-    </div>
-    <table id="excel-table"></table>
-    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
-  </div>
-  <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+<div class="table"></div>
+<script src="js/main.js"></script>
+
 </body>
-
 </html>

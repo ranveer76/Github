@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    background: #3e3e3ef1;
+    color: #ffffff;
+}
+#main{
+    display:grid;
+    border: 0;
+    grid-template-columns: 2fr 2fr;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+}
+div{
+    max-width: 520px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+a{
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+img{
+    width: 450px;
+    height: 300px;
+}
+h5{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    position: fixed;
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: blue;
+}
+::-webkit-scrollbar {
+    width: 5px;   
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}           
+/* Path: assets\css\style.css */
