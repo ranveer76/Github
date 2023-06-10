@@ -1,0 +1,132 @@
+<!Document html>
+    <html lang="en">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home</title>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <script src="js/main.js" defer></script>
+        </head>
+
+        <body>
+            <header>
+                <nav>
+                        <img src="images/logo.webp" class="logo" alt="logo" />
+                    <ul id="color-theme">
+                        <li><button id="dark" onclick="dark()">Dark</button></li>
+                        <li><button id="light" onclick="light()">Light</button></li> 
+                    </ul>
+                </nav>
+            </header>
+            <main id="form">
+                <section id="head">
+                    <h1>Web Banner Design Request Form</h1>
+                    <p>Get a professional and unique look web banner to reach your target audience.</p>
+                </section>
+                <section id="content">
+                <form>
+                    <div id="form-name">
+                        <label for="name">Name:</label>
+
+                        <select name="name" title="prefix" id="prefix">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                        </select>
+
+                        <input type="text" name="name" id="first-name" placeholder="First Name" />
+                        <input type="text" name="name" id="last-name" placeholder="Last Name" />
+                    </div>
+                    <div id="form-company">
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" id="company" placeholder="Company" />
+                    </div>
+                    <div id="form-email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div id="form-phone">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone" />
+                    </div>
+                    <div id="form-website_url">
+                        <label for="website_url">Website URL:</label>
+                        <input type="url" name="website_url" id="website_url" placeholder="Website URL" />
+                    </div>
+                    <div id="form-bannertype">
+                        <label for="bannertype">Banner Type:</label>
+                        <select name="bannertype" id="bannertype">
+                            <option value="static">Static</option>
+                            <option value="animated">Animated</option>
+                        </select>
+                    </div>
+                    <div id="form-bannersize">
+                        <label for="bannersize">Banner Size in pixels:</label>                    
+                        <select name="bannersize" id="bannersize">
+                            <option value="468x60">Full Banner-468x60</option>
+                            <option value="728x90">Leaderboard-728x90</option>
+                            <option value="336x280">Square-336x280</option>
+                            <option value="300x250">Square-300x250</option>
+                            <option value="250x250">Square-250x250</option>
+                            <option value="200x200">Small Square-200x200</option>
+                            <option value="125x125">Button-125x125</option>
+                            <option value="120x600">Skyscraper-120x600</option>
+                            <option value="160x600">Wide Skyscraper-160x600</option>
+                            <option value="300x600">Half Page-300x600</option>
+                            <option value="970x90">Large Leaderboard-970x90</option>
+                            <option value="240x400">Vertical Rectangle-240x400</option>
+                            <option value="970x250">Billboard-970x250</option>
+                            <option value="970x66">Small Billboard-970x66</option>
+                            <option value="320x50">Mobile Leaderboard-320x50</option>
+                            <option value="320x100">Large Mobile Banner-320x100</option>
+                        </select>
+                    </div>
+                    <div id="text-area">
+                    <div id="form-bannerconcept">
+                        <label for="bannerconcept">Main concept For Your Banner:</label>
+                        <textarea name="bannerconcept" id="bannerconcept" placeholder="Main concept For Your Banner"
+                            maxlength="78"></textarea>
+                    </div>
+                    <div id="form-bannercontent">
+                        <label for="bannercontent">Describe any ideas you have in mind for your design:</label>
+                        <textarea name="bannercontent" id="bannercontent"
+                            placeholder="Content For Your Banner"></textarea>
+                    </div>
+                    <div id="form-bannercomments">
+                        <label for="bannercomments">Any other comments:</label>
+                        <textarea name="bannercomments" id="bannercomments"
+                            placeholder="Comments For Your Banner"></textarea>
+                    </div>
+                    </div>
+                    <div id="form-query">
+                        <label for="query">How many concepts or samples do you want to receive:</label>
+                        <select name="query" id="query">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="other">more</option>
+                        </select>
+                    </div>
+                    <!-- <div id="form-uplpoad">
+                        <label for="upload">Attach design materials:</label>
+                        <input type="file" name="upload" id="file" />
+                        <button type="button" id="upload" onclick="upload()">Upload</button>
+                    </div> -->
+                    <div id="form-submit">
+                        <button type="submit" onclick="save()" id="submit">Submit</button>
+                    </div>
+                </form>
+                </section>
+            </main>
+            <footer>
+                <div id="footer-content">
+                    <div id="footer-logo">
+                        <img src="images/logo.webp" alt="logo" />
+                    </div>
+                    <div id="footer-contact">
+                        </div>
+        </body>
+
+    </html>

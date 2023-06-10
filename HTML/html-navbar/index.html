@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>navbar</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="HTML Buttons" />
+    <meta viewport="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="icon">
+          <a href="#"><button id="icon" class="b1"></button></a>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

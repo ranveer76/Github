@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+ 
+    <div class="links">
+        <a href="https://accounts.google.com/">Gmail</a>
+        <a href="https://www.google.com/search?q=wallpaper+images">Images</a>
+        <a href="https://play.google.com/">Apps</a>
+        <a href="https://www.google.com/intl/en_in/drive/">Google Drive</a>
+        <a href="https://en.wikipedia.org/wiki/Google">More</a>
+        <button class="user-button"><a href="signup.html">Sign in</a></button>
+    </div>
+    <div id="main">
+    <div id="signup">
+    <div id="user"><label for="name">Enter username : </label>
+        <input type="text" name="name" id="name" />
+    </div>
+    <div id="user-email"><label for="email">Enter email : </label>
+        <input type="email" name="email" id="email" />
+    </div>
+    <div id="user-phone"><label for="phone">Enter phone number : </label>
+        <input type="tel" name="phone" id="phone" />
+        <div id="pass"><label for="password">Enter password : </label>
+            <input type="password" name="password" id="password" />
+        </div>
+        <div id="pass-confirm"><label for="password-confirm">Confirm password : </label>
+            <input type="password" name="password-confirm" id="password-confirm" />
+        </div>
+        <button type="button" id="signup1" onclick="signup()">Sign Up</button>
+        </div>
+        </div>
+    
+    <div class="footer">
+        <a href="https://ads.google.com/">Advertising</a>
+        <a href="https://www.google.com/business/">Business</a>
+        <a href="https://about.google/">About</a>
+    </div>
+
+</div>
+</body>
+</html>

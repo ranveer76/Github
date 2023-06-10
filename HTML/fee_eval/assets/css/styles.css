@@ -1,0 +1,352 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(79, 72%, 55%);
+  --first-color-light: hsl(79, 97%, 77%);
+  --first-color-alt: hsl(79, 67%, 52%);
+  --first-color-dark: hsl(79, 63%, 50%);
+  --first-color-gray: hsl(79, 6%, 64%);
+  --title-color: hsl(180, 4%, 98%);
+  --title-color-black: hsl(180, 4%, 12%);
+  --text-color: hsl(180, 4%, 72%);
+  --text-color-light: hsl(180, 4%, 65%);
+  --body-color: hsl(180, 12%, 8%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Red Hat Display', sans-serif;
+  --second-font: 'Kaushan Script', cursive;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.5rem;
+  --big-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-bold: 700;
+  --font-black: 900;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 6rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image:url(../img/back1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} 
+footer{
+  width: 100%;
+  margin: 35px;
+}
+.back2{
+  background-image: url(../img/back2.webp);
+}
+#ul1{
+  width:30px;
+  justify-content: space-between;
+}
+#pop_up{
+  padding: 50px;
+  display: none;
+  left:25%;
+  right:25%;
+  max-width: 550px;
+  position: fixed;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+
+}
+#pop_up img{
+  width: 100%;
+  border-radius: 12px;
+  max-width:250px;
+  height: auto;
+}
+#pop_up h3, #pop_up p{
+  width: 100%;
+  text-align: center;
+}
+#pop_up h3{
+  margin: 20px;
+}
+#pop_up button, #pop_up input{
+  margin: 10px;
+}
+#pop_up input{
+  padding: 5px 20px;
+  width:100%;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+#btn1{
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.close{
+  float: right;
+  padding: 0 5px;
+  font-size: larger;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+#home2{
+  float:right;
+}
+#main1{
+  margin-left:13%;
+  width:100%;
+  margin-top: 10%;
+  max-width: 1020px;
+  display: inline-block;
+}
+#home1,#home2{
+  max-width: 560px;
+  padding: 20px;
+  margin: 10px;
+}
+#home1 h1,#home2 h1{
+  margin:10px;
+  width: 100%;
+  text-align: center;
+}
+#home1 p,#home2 p{
+  margin: 10px;
+  font-size: large;
+}
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+#program{
+  padding: 50px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+}
+#program-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#program-div h2 {
+  width: 100%;
+  text-align: center;
+}
+#program-div p{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+#program-div div{
+  padding: 5px 15px;
+  width:50%;
+  text-align: center;
+  border-radius: 15px;
+}
+#program-div div img{
+  width: 100%;
+  border-radius: 12px;
+  max-width: 200px;
+  height: auto;
+}
+#program-div div img:hover{
+  transform: scale(1.7);
+  margin: 45px;
+}
+#pricing{
+  padding: 50px;
+  border-radius: 15px;
+}
+#pricing div{
+  background-color: rgba(0,0,0,0.5);
+}
+#pricing h1{
+  width: 100%;
+  text-align: center;
+}
+#pricing p{
+  font-size: 15px;
+  font-weight: bold;
+}
+#home{
+  width:100%;
+  max-width: 400px;
+  margin:56px;
+  padding: 50px 20px;
+  border-radius: 15px;
+}
+#home h1{
+  width: 100%;
+  font-size: 45px;
+  max-width: 250px;
+}
+#header{
+  position: fixed;
+  width: 100%;
+}
+
+#nav{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#nav ul{
+  display: flex;
+}
+#nav ul li{
+  list-style: none;
+}
+#nav a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#nav a:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1124px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__data {
+  display: flex;
+  flex-direction: column;
+  row-gap: .75rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section__title, 
+.section__title-border {
+  font-size: var(--big-font-size);
+  letter-spacing: 1.5px;
+}
+
+.section__subtitle {
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: var(--first-color);
+  transform: rotate(-2deg);
+}
+
+.section__titles {
+  display: flex;
+  column-gap: .75rem;
+  justify-content: center;
+}
+
+.section__title-border {
+  -webkit-text-stroke: 1px var(--text-color);
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+.color-red {
+  color: hsl(0, 80%, 64%);
+}
+
+.color-green {
+  color: var(--first-color);
+}

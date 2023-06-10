@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+ 
+        <div class="links">
+            <a href="https://accounts.google.com/">Gmail</a>
+            <a href="https://www.google.com/search?q=wallpaper+images">Images</a>
+            <a href="https://play.google.com/">Apps</a>
+            <a href="https://www.google.com/intl/en_in/drive/">Google Drive</a>
+            <a href="https://en.wikipedia.org/wiki/Google">More</a>
+            <button class="user-button"><a href="signup.html">Sign in</a></button>
+        </div>
+        <div id="main">
+        <div id="googlelogo">
+            <img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif" id="logo">
+        </div>
+
+		<form action="https://www.google.com/search" method="get" class="search">
+			<input type="text" name="q"  value="" placeholder="Search On Google" id="input">
+			<br><br>
+            <button><img src="https://cdn-icons-png.flaticon.com/512/720/720255.png" alt="">
+            </button>
+		</form>
+
+        <div id="btn2">
+        <button class="btn2"><a href="https://www.google.com/doodles">I am Feeling Lucky</a></button>
+        <button class="btn2" type="button" onclick="search()">Google Search</button>
+        </div>
+        
+        <div class="footer">
+            <a href="https://ads.google.com/">Advertising</a>
+            <a href="https://www.google.com/business/">Business</a>
+            <a href="https://about.google/">About</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

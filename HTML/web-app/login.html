@@ -1,0 +1,26 @@
+<section id="logo-main">
+    <img src="img/logo.png" alt="logo" />
+</section>
+<section id="login-data">
+    <div id="user"><label for="login">Enter username/email : </label>
+    <input type="text" name="login" id="login"/></div>
+    <div id="pass"><label for="password">Enter password : </label>
+    <input type="password" name="password" id="password"/></div>
+    <button type="button" id="login1-button" onclick="login1()">Login</button>
+    <button type="button" id="signup1" onclick="signup()">Sign Up</button>
+    <button type="button" id="forgot" onclick="forgot()">Forgot Password</button>
+</section>
+<section id="popup">
+    <div id="popup-content">
+        <div id="popup-close"><button type="button" id="close" onclick="closePopup()">X</button></div>
+        <div id="popup-text">
+            <label for="popup-password">Enter New password : </label>
+            <input type="password" name="popup-password" id="popup-password" />
+            <label for="popconf-password">Confirm password : </label>
+            <input type="password" name="popup-password" id="popconf-password" />
+            <label for="popup-otp">Enter OTP : </label>
+            <input type="text" name="popup-otp" id="popup-otp" />
+            <button type="button" id="popup-otp-button" onclick="popOtp()">Verify</button>
+        </div>
+    </div>
+</section>

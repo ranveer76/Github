@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+#section_1>:nth-child(1),#section_1>:nth-child(2),#section_1>:nth-child(3){
+    margin: 10px;
+}
+#section_1{
+    display: flex;
+    align-items: center;
+}
+#section_1 button{
+    padding: 2px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#section_1 button:hover{
+    background-color: #ffffff;
+    color: #2f2f2f;
+}
+#section_1 button:active{
+    background-color: #ffffff;
+    color: #2f2f2f;
+}
+#section_1 button:focus{
+    outline: none;
+}
+#section_1 select{
+    padding: 2px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#section_1 select:hover{
+    background-color: #ffffff;
+    color: #2f2f2f;
+}
+#section_1 select:active{
+    background-color: #ffffff;
+    color: #2f2f2f;
+}
+#section_1 select>option{
+    background-color: #2f2f2f;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+#testing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#testing button,#testing a,#testing input{
+    padding: 2px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#testing input{
+    border: 1px solid #ffffff;
+}
+#testing .remove{
+    background-color: #ff0000;
+    color:aqua;
+}
+#testing button:hover,#testing a:hover,#testing input:hover{
+    background-color: #ffffff;
+    color: #2f2f2f;
+}

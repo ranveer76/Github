@@ -1,0 +1,360 @@
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#c1 {
+    float: right;
+    margin-bottom: 20px;
+}
+
+body {
+    background: url(https://images.indianexpress.com/2022/11/Vikram-I-rocket.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+details {
+    margin: 10px auto;
+    width: 80%;
+    color: white;
+}
+
+details summary {
+    color: #ffffff;
+}
+
+details[open]>summary:first-of-type {
+    list-style-type: none;
+}
+
+details>summary:first-of-type {
+    list-style-type: none;
+}
+
+details>summary:hover,
+details[open]>summary:hover {
+    cursor: pointer;
+}
+
+details>p {
+    color: #ffffff;
+    background-color: #2865299c;
+    padding: 10px 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+#nav-button {
+    display: none;
+}
+
+#tribute-data p {
+    color: #ffffff;
+    background-color: #8245de51;
+    padding: 10px 20px;
+    width: 90%;
+    max-height: 560px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+#tribute-data details summary p {
+    background-color: #3d722b94;
+    overflow: none;
+    text-overflow: none;
+    height: auto;
+}
+
+
+#tribute-data details p {
+    background-color: #3d722b94;
+}
+
+.active {
+    background: #ffffff;
+    color: #000000;
+}
+
+nav {
+    background: #000;
+    box-shadow: #4b4b4b 5px 5px 5px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+}
+
+#tribute-button {
+    margin-top: -50px;
+    margin-left: -10px;
+    width: 100%;
+    position: fixed;
+}
+
+nav input {
+    width: 100%;
+    max-width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 10px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#outter {
+    position: fixed;
+    background: #24054f;
+    display: none;
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    font: 1em sans-serif;
+    padding: 10px 20px;
+    bottom: 40%;
+    left: 25%;
+    right: 25%;
+}
+
+#outter button {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: #4b4b4b 5px 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: #4b4b4b 5px 5px 5px;
+    margin-top: 50px;
+    text-shadow: #8f8f8f 5px 5px 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#search-bar {
+    margin-top: 0;
+}
+
+img {
+    display: flex;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: #4b4b4b 8px 8px 8px;
+    width: 60%;
+    height: 54%;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+#caption {
+    display: flex;
+    margin: 10px auto;
+    font-weight: 500;
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+#tribute-data {
+    border: 1px solid #ffffff;
+    background: #ffffff45;
+    border-radius: 18px;
+    margin: 10px auto;
+    box-shadow: #4b4b4b 5px 5px 5px;
+    max-width: 65%;
+}
+
+#tribute-data h1 {
+    color: #ffffff;
+}
+
+nav button,
+nav a {
+    background: #000000;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search-button {
+    background: #4c89cf;
+    color: #ffffff;
+    padding: 0 20px;
+    margin: 10px 10px 10px 0;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+nav button:hover,
+nav a:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 10px auto;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#tribute-data a {
+    float: right;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: #4b4b4b 5px 5px 5px;
+    background: #42a2d3;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+#tribute-data #r1 {
+    float: left;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media screen and (max-width: 830px) {
+    nav {
+        display: flex;
+    }
+    #outter {
+        font:0.8em sans-serif;
+        bottom:0;
+    }
+    #outter h1 {
+        font-size: 30px;
+    }
+    #outter button {
+        margin: 10px auto;
+    }
+    #pop-nav li {
+        display: block;
+        margin: 30px auto;
+    }
+
+    #pop-nav {
+        display: block;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+        background-color: #24054f;
+        margin-top: 45px;
+    }
+
+    #nav-button {
+        display: inline;
+        height: 30px;
+        margin: 10px 0 10px 10px;
+    }
+
+    #caption {
+        width: 100%;
+        font-size: medium;
+    }
+
+    #search-bar {
+        float: right;
+        margin: 0;
+        width: 65%;
+    }
+
+    #search-bar input {
+        max-width: 140px;
+    }
+
+    #search-button {
+        margin: 10px 10px 10px 0;
+    }
+
+    #tribute-data {
+        max-width: 100%;
+    }
+
+    #pop-nav {
+        display: none;
+    }
+}
+@media screen and (max-width: 330px){
+    #outter{
+        right: 0;
+        left:0;
+        font: 1em sans-serif;
+    }
+    #outter button{
+        font-size: 15px;
+        width: 120px;
+    }
+
+    
+}
