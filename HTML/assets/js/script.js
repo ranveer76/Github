@@ -10,7 +10,7 @@ let data={
     'excel/':['Excel','excel_fetch.png'],
     'html_1/':['HTML 1','html_1.png'],
     'web-app/':['Web App','web_app.png'],
-    'fee-lab-eval/':['Tribute Page','tribute.png'],
+    'fee-lab-eval/':['Tribute Page','Tribute.png'],
     'input-variables/':['Input Variables','input_variables.png'],
     'first html.html':['First HTML','first_html.png'],
 }
